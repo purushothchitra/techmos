@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - techmos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/4388d4332e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        BRAND
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav navbar-inner-container">
+                            <a href="#" class="nav-item nav-link navbar-links">Home</a>
+                            <div href="#" class="nav-item nav-link navbar-links dropdown-list-main company-dropdown">
+                                Company<i class="fa-solid fa-angle-down company-icon-down"></i>
+                                <i class="fa-solid fa-angle-up company-icon-up"></i>
+                                <div class="dorpdown-list-inner-company">
+                                    <ul>
+                                        <li><a>About Us</a></li>
+                                        <li><a>Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div href="#" class="nav-item nav-link navbar-links service-dropdown">
+                                Service<i class="fa-solid fa-angle-down service-icon-down"></i>
+                                <i class="fa-solid fa-angle-up service-icon-up"></i>
+                                <div class="dorpdown-list-inner-service">
+                                    <ul>
+                                        <li><a>Mobile App Development</a></li>
+                                        <li><a>Web App Development</a></li>
+                                        <li><a>Digital Marketing</a></li>
+                                        <li><a>Artificial Intelligence</a></li>
+                                        <li><a>Data Science & Analytics</a></li>
+                                        <li><a>Robotics Process Automation</a></li>
+                                        <li><a>Blockchain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="nav-item nav-link navbar-links">Training</a>
+                            <a href="#" class="nav-item nav-link navbar-links">Blog</a>
+                            <a href="#" class="nav-item nav-link navbar-links">Career</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-scroll-animation">
+                    <div id="progressBar" class=""></div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="row footer-row">
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-12">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                        <div class="footer-message">
+                            <p>
+                                We will likely assistance organizations keep up<br />
+                            accomplish best class positions their separate<br />
+                            enterprises & our group works happen that delights<br />
+                            need to be disavowed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-12">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                        
+                        <div class="usefull-links">
+                            <ul>
+                                <li class="links">
+                                    <a href="#">Mobile App development</a>
+                                </li>
+                                <li class="links">
+                                    <a href="#">Web App development</a>
+                                </li>
+
+                                <li class="links">
+                                    <a href="#">Digital Marketing</a>
+                                </li>
+                                <li class="links">
+                                    <a href="#">Artificial Intelligence</a>
+                                </li>
+                                <li class="links">
+                                    <a href="#">Data Science & Analytics</a>
+                                </li>
+                                <li class="links">
+                                    <a href="#">Robotics Process Automation</a>
+                                </li>
+                                <li class="links">
+                                    <a href="#">Blockchain</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-3 col-12">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                        <div class="contact-us-container">
+                            <div class="contact-us">Contact Us</div>
+                            <div>
+                                Office Location
+                            </div>
+                            <p class="adress">
+                                GRABB Private Limited<br />
+                                Level 4, Tower A, TEK Meadows, No.51,<br />
+                                OMR,Sholinganallur, Chennai-600 119.
+                            </p>
+                            <p>
+                                Phone No.
+                            </p class="adress">
+                            <p class="adress">+91 94440 99009</p>
+                            <p>
+                                Email Address
+                            </p>
+                            <p class="adress">
+                                info@grabbtech.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-icons-container">
+                <div class="footer-icons"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="footer-icons"><i class="fa-brands fa-twitter"></i></div>
+                <div class="footer-icons"><i class="fa-brands fa-instagram"></i></div>
+                <div class="footer-icons"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="footer-icons"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
